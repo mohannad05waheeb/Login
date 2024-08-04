@@ -1,0 +1,131 @@
+* {
+    font-family: sans-serif;
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0;
+} 
+.header {
+    width: 100%; 
+    height: 80px; 
+    background-color: black;
+}
+.header .container {
+    display: flex; 
+    justify-content: space-between;
+} 
+nav ul {
+    display: flex; 
+    gap: 40px;
+    list-style: none;   
+    transform: translate(-70px,25px);
+}
+nav ul li a {
+    text-decoration: none; 
+    color: white;  
+    padding: 7px;
+}
+.logo {
+    color: blue;
+    font-weight: bold; 
+    margin-left: 50px;
+    margin-top: 25px;     
+}
+.logo:hover {
+    font-size: 20px;
+}
+nav ul li a:hover {
+    background-color: #777;  
+    border-top: 2px solid white; 
+    border-bottom: 2px solid white;   
+} 
+.login {
+    width: 300px; 
+    height: 250px; 
+    background-color: white;
+    border: 7px solid rgba(0, 0, 255, 0.404); 
+    margin-left: 370px; 
+    margin-top: 20px; 
+    border-radius: 10px;
+} 
+.login .logo2 {
+    font-weight: bold;
+    margin-top: 20px; 
+    margin-left: 15px;
+} 
+.login .logo2 span {
+    color: blue;
+}
+input {
+    border: none; 
+    outline: none;
+    border-bottom: 2px solid #777;
+    margin-left: 30px; 
+    margin-top: 20px;
+    padding-bottom: 5px;
+    width: 80%;
+}
+input:focus {
+    border-bottom: 2px solid blue;
+}
+button {
+    margin-left: 30px;
+    margin-top: 30px;
+    width: 80%; 
+    outline: none;
+    border: none;
+    padding: 10px;
+    color: white; 
+    background-color: darkblue;
+    border-radius: 7px;
+} 
+button:hover {
+    background-color: blue; 
+    cursor: pointer;
+}
+.login a {
+    text-decoration: none;  
+    margin-left: 70px;     
+} 
+.login .parent {
+    margin-top: 10px;
+}
+.login a:hover {
+    text-decoration: 1px underline blue; 
+}         
+.footer {
+    width: 100%; 
+    height: 250px; 
+    background-color: #777;
+    margin-top: 41px;
+    color: white;
+} 
+.footer .text {
+    transform: translate(30px,5px);
+    line-height: 1.6;
+} 
+.footer .container {
+    display: flex; 
+    gap: 20px;
+} 
+.footer .email {
+    margin-top: 40px;
+} 
+.footer h3:hover {
+    border-bottom: 4px solid white;    
+}
+@media (max-width: 767px) {
+    nav,.email{
+        display: none;
+    } 
+    .header {
+        width: 200%;
+    } 
+    .footer {
+        width: 200%;
+        margin-top: 300px;
+    } 
+    .login {
+        margin-left:200px;
+        margin-top: 200px;
+    }  
+}    
